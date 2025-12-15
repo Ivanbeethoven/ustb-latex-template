@@ -1,0 +1,98 @@
+\documentclass{ustbthesis}
+
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{subfig} % 去掉caption相关选项，避免与类冲突
+\newcommand{\figref}[1]{~\ref{#1}~}
+\newcommand{\tabref}[1]{~\ref{#1}~}
+\newcommand{\thickhline}{\noalign{\hrule height 0.9pt}}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% 统一链接为黑色（避免绿色引用）
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%封面信息%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Author{XX}
+\EnglishAuthor{XX}
+\Title{现代绿色化学中的物理有机问题}
+\EnglishTitle{Physical Organic Concerns in Green Chemistry}
+\Subtitle{酵母菌催化反应机理和咪唑类离子液体酸度的研究}
+\EnglishSubtitle{Mechanistic Aspects of Baker's Yeast Mediated Reduction and Measurements of Acidity of Imidazolium Ionic Liquids}
+\Date{202X年 XX月 XX日}
+\EnglishDate{March, 2022}
+\College{计算机与通信工程学院}
+\EnglishCollege{School of Computer and Communication Engineering}  
+\Address{海淀区学院路30号}
+\EnglishAddress{30 Xueyuan Road, Haidian District}
+\Affiliation{北京科技大学}
+\EnglishAffiliation{University of Science and Technology Beijing}
+\Postcode{100083}
+\City{北京}
+\EnglishCity{Beijing}
+\Country{中国}
+\EnglishCountry{P.R.CHINA}
+\StudentCode{M202310652}
+\Major{计算机科学与技术}
+\EnglishMajor{Computer Science and Technology}
+\Direction{软件工程方向}
+\EnglishDirection{Software Engineering}
+\Supervisor{xxx}
+\EnglishSupervisor{Chang'ai Sun}
+\DegreeType{学术型}
+\EnglishDegreeType{Science}
+\CLCNumber{}
+\UDCNumber{}
+\UniversityCode{10008}
+\UniversityLogoFile{images/ustb.png}
+\SecurityLevel{公开}
+\SubmissionDate{2026 年 05月 15日}
+\EnglishSubmissionDate{May 15, 2026}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%封面信息%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\TitlePage
+\SecondPage
+\ThirdPage
+
+\pagestyle{fancy}
+
+%% 中英文摘要
+\include{contents/abstract}
+%% 序言
+\include{contents/preclude}
+\tableofcontents
+
+\include{contents/list}
+\include{contents/list-sym}
+
+\mainmatter
+\pagestyle{fancy}
+
+\include{contents/chap1}
+\include{contents/chap2}
+\include{contents/chap3}
+\include{contents/chap4}
+\include{contents/chap5}
+\include{contents/chap6}
+
+%% 参考文献（BibTeX + refs.bib）
+% 若需调整样式，可将 unsrtnat 改为其它 bst
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+%% 附录
+\include{contents/appendix}
+%% 致谢
+\include{contents/thanks}
+%% 作者简历及在学研究成果
+\include{contents/mresume}
+%% 关于论文使用授权的说明
+\postDeclarations
+%% 学位论文数据集
+\include{contents/dataset}
+
+\end{document}

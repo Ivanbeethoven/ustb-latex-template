@@ -1,0 +1,36 @@
+## LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+
+## Latexmk / other helper files
+*.xdv
+*.pdfsync
+
+## Editor / OS junk
+.DS_Store
+Thumbs.db
+~$*
+*.bak
+*.tmp
+
+## Generated PDFs (可按需放开)
+# *.pdf
+

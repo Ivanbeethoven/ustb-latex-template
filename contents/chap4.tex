@@ -1,0 +1,113 @@
+\chapter{研究结果}
+
+自行确定是否使用四级标题。论文中出现英文时需要使用Times New Roman字体。这个结构可以根据自己论文需要进行调整。
+
+如图\figref{fig1}，是这里插图的样式示例，以下不再重复，根据论文实际情况添加即可。
+
+\begin{figure}[htb]
+	\centering
+	\subfloat[示意图1]
+	{\includegraphics[width=0.65\textwidth]{images/image1.png}\label{fig1:subfig1}}\\
+	\subfloat[示意图2]
+	{\includegraphics[width=0.65\textwidth]{images/image1.png}\label{fig1:subfig2}}\\
+	\bicaption{非线性构形状态转移过程示意图}{Schematic diagram of nonlinear configuration state transition process.}
+	\vspace{0.3em}
+	{\centering (资料来源：XXXXXXXXXXXXXXXXXXX)\par}
+	\label{fig1}
+\end{figure}
+
+续图示例：
+
+\begin{figure}[htb]
+	\centering
+	\subfloat[示意图1]
+	{\includegraphics[width=0.6\textwidth]{images/image1.png}
+		\label{fig2:subfig1}}
+	\centering\bicaption{数据图}{Data Graph}
+	\label{fig2}
+\end{figure}
+
+\begin{figure}[htb]
+\ContinuedFloat
+\addtocounter{subfigure}{-1}
+\centering
+\subfloat[示意图2]
+{\includegraphics[width=0.6\textwidth]{images/image1.png}
+	\label{fig2:subfig2}}
+\bicaption{续}{Cont}
+\end{figure}
+
+如表\tabref{label:tab1}，是这里表格的样式示例，以下不再重复，根据论文实际情况添加即可。
+
+\begin{table}[htb]
+    \centering\bicaption{线性五杆结构各自由度随机反应数值特征}{Numerical characteristics of random response of linear five-bar structure with various degrees of freedom}
+\label{label:tab1}
+\noindent\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{P{5.25em}P{5.25em}P{4.5em}P{4.5em}P{4.5em}P{4.5em}P{4.5em}}
+\toprule
+\multirow{2}{*}{\centering $x_1$/m} & \multicolumn{3}{c}{$F_x$} & \multicolumn{3}{c}{$x_2$}\\
+\cline{2-7} & 均值/N & 标准差/N & 变异系数 & 均值/m & 标准差/m & 变异系数\\
+\hline
+0.000000 & 0.000000 & 0.000000 & 0.000000 & 0.000000 & 0.000000 & 0.000000\\
+0.000100 & 206.006806 & 150.245905 & 0.729325 & 0.000024 & 0.000013 & 0.541667\\
+0.000200 & 412.013613 & 215.100090 & 0.522070&
+0.000049 & 0.000018 & 0.367347\\
+0.000300 & 618.020419 & 266.613296& 0.431399	& 0.000073 & 0.000022 & 0.301370\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+续表示例：
+\begin{table}[h!]
+    \centering\bicaption{国际单位制中具有专门名称的导出单位}{Export units of special name in International System of Units}
+    \label{label:tab2}
+    \noindent\renewcommand{\arraystretch}{0.9}
+    \begin{tabular}{P{12em}P{6em}P{6em}P{8em}}
+        \toprule
+        量的名称 & 单位名称 & 单位符号 & 其他表示示例 \\\midrule
+        频率  & 赫[兹] & Hz & $\mathrm{s}^{-1}$ \\
+        力；重力 & 牛[顿] & N & $\mathrm{kg}\cdot\mathrm{m}/\mathrm{s}^2$ \\
+        压力，压强；应力 & 帕[斯卡] & Pa & $\mathrm{N}/\mathrm{m}^2$ \\
+        能量；功；热 & 焦[耳] & J & $\mathrm{N}\cdot\mathrm{m}$ \\
+        		功率；辐射通量&	瓦［特］	& W	 &J/s\\
+        电荷量&	库［仑］	& C	& A·s\\
+        电位；电压；电动势&	伏［特］&	V	& W/A\\
+        		电容&	法[拉]&	F&C/V\\
+        				电阻&	欧［姆］&	Ω&	V/A\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+	\ContinuedFloat
+	\centering
+	\bicaption{续}{Cont}
+	\noindent\renewcommand{\arraystretch}{0.9}
+	\begin{tabular}{P{12em}P{6em}P{6em}P{8em}}
+		\toprule
+		量的名称 & 单位名称 & 单位符号 & 其他表示示例 \\\midrule  
+		电导&	西［门子］&	S&	A/V\\    
+		磁通量	& 韦［伯］&	Wb&	V·s\\
+		磁通量密度，磁感应强度	& 特［斯拉］&	T	& $\mathrm{Wb}/\mathrm{m}^2$\\
+		电感	& 亨［利］&	H&	$\mathrm{Wb}/\mathrm{A}$\\
+		摄氏温度&	摄氏度	& ℃	&\\
+		光通量&	流明	& lm	& $\mathrm{cd}·\mathrm{sr}$\\
+		光照度&	勒［克斯］&	lx&	$\mathrm{lm}/\mathrm{m}^2$\\
+		放射性活度&	贝可［勒尔］&	Bq&$\mathrm{s}^{-1}$\\
+		吸收剂量&	戈［瑞］&	Gy&	$\mathrm{J}/\mathrm{kg}$\\
+		剂量当量&	希［沃特］&	Sv&	$\mathrm{J}/\mathrm{kg}$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+这里公式的样式示例，以下不再重复，根据论文实际情况添加即可。
+
+将剩余的试样分成两份后放入烘箱中，分别测量放入前和烘完后的质量，并对土体的含水率进行计算，密度取两份的平均值，计算公式为：
+\begin{equation}
+\label{eq:04:01}
+    w = \frac{m_{water}}{m_2} = \frac{m_1-m_2}{m_2}\times 100\%
+\end{equation}
+式中：$w$为含水率；$m_1$为放之前的质量；$m_2$为烘完之后的质量；$m_{water}$为试样的含水量。
+
+说明1：根据实际情况占用1行或多行，编号右端对齐，表达式与编号之间可用“…”连接，如有两个以上的表达式，应用从“1”开始的阿拉伯数字进行编号，并将编号置于圆括号内；表达式较多时，可分章编号，如 \eqref{eq:04:01} 表示第四章第一个表达式。
+
