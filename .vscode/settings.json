@@ -53,14 +53,14 @@
             ]
         },
         {
-            "name": "XeLaTeX*2 (no BibTeX)",
+            "name": "(点击这里)XeLaTeX*2 (no BibTeX)",
             "tools": [
                 "xelatex",
                 "xelatex"
             ]
         },
         {
-            "name": "(打开main.tex后点击这里)XeLaTeX -> BibTeX -> XeLaTeX*2",
+            "name": "XeLaTeX -> BibTeX -> XeLaTeX*2",
             "tools": [
                 "xelatex",
                 "bibtex",
